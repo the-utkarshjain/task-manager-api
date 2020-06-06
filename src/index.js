@@ -10,6 +10,7 @@ const taskRouter = require('./routers/task.js')
 const app = express()
 const port = process.env.PORT
 
+// express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object.
 app.use(express.json())
 app.use(userRouter)
 app.use(taskRouter)

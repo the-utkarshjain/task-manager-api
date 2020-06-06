@@ -7,6 +7,8 @@ const {sendWelcomeEmail, sendGoodbyeEmail} = require('../emails/account.js')
 const router = new express.Router()
 
 router.post('/users', async (req, res) => {
+    
+    //Sent the data in the body through postman
     const user = new User(req.body)
 
     try {
